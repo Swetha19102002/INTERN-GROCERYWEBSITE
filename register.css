@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url("./images/regimg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.register-container {
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    margin: 100px auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:black
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:slategray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color:silver;
+}
+p {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color:black;
+    text-decoration: none;
+}
+a{
+    color:#007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
