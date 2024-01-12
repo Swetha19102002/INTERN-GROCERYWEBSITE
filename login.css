@@ -11,7 +11,6 @@ body {
     height: 100vh;
     margin: 0;
 }
-
 .login-container {
     background-color: #fff;
     border-radius: 5px;
@@ -19,31 +18,25 @@ body {
     width: 400px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
     margin-left:25%;
-    
 }
-
 h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .input-container {
     margin-bottom: 20px;
     
 }
-
 label {
     display: block;
     margin-bottom: 5px;
 }
-
 input {
     width: 95%;
     padding: 8px;
     border: 1px solid black;
     border-radius: 3px;
 }
-
 button {
     background-color: slategray;
     color: white;
@@ -54,11 +47,9 @@ button {
     width: 100%;
     margin-top: 20px;
 }
-
 button:hover {
     background-color: silver;
 }
-
 p{
     text-align: center;
     display: block;
@@ -69,7 +60,6 @@ p{
 a{
     color:#007bff;
 }
-
 a:hover {
     color: #0056b3;
 }

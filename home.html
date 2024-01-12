@@ -7,7 +7,12 @@
     <link rel="icon" type="image/x-icon" href="./images/webimg.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Online Grocery</title>
+    <script src="home.js"></script>
+    <script src="cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <title>Online Grocery</title>
 </head>
 <body>
     <header>
@@ -15,78 +20,34 @@
             <ul>
                 <li><a href="#"><img src="./images/webimg.png" alt="website logo"></a></li>
                 <li> <input class="fa" type="text" placeholder=" &#xf002;  Search for products"></li>
-                <li><button>Login/Register</button></li>
+                <li><button onclick='document.location="login.html"'>Login/Register</button></li>
                 <li class="dropdown">
                     <button class="fa">Product Categories</button>
                     <div class="dropdown-content">
                         <div class="sub-dropdown">
                             <a href="#">Fruits</a>
-                            <div class="sub-dropdown-content">
-                                <a href="#">Apple</a>
-                                <a href="#">Orange</a>
-                                <a href="#">Grape</a>
-                                <a href="#">Strawberry</a>
-                                <a href="#">Muskmelon</a>
-                                <a href="#">Mango</a>
-                                <a href="#">Blueberry</a>
-                                <a href="#">Plums</a>
-                                <a href="#">Avocado</a>
-                                <a href="#">Kiwi</a>
-                                <!-- Add other fruit items here -->
-                            </div>
                         </div>
                         <br>
                         <div class="sub-dropdown">
                             <a href="#">Vegetables</a>
-                            <div class="sub-dropdown-content">
-                                <a href="#">Carrot</a>
-                                <a href="#">Broccoli</a>
-                                <a href="#">Tomato</a>
-                                <a href="#">Betroot</a>
-                                <a href="#">Cabbage</a>
-                                <a href="#">Onion</a>
-                                <a href="#">brinjal</a>
-                                <a href="#">Potato</a>
-                                <a href="#">Caulifolwer</a>
-                                <a href="#">Spinach</a>
-                                <a href="#">BitterGuard</a>
-                                <!-- Add other vegetable items here -->
-                            </div>
                         </div>
                         <br>
                         <div class="sub-dropdown">
                             <a href="#">Oil</a>
-                            <div class="sub-dropdown-content">
-                                <a href="#">Olive Oil</a>
-                                <a href="#">Sunflower Oil</a>
-                                <a href="#">Coconut Oil</a>
-                                <a href="#">Safflower Oil</a>
-                                <a href="#">Canola Oil</a>
-                                <a href="#">Herbal Oil</a>
-                                <!-- Add other oil items here -->
-                            </div>
                         </div>
                         <br>
                         <div class="sub-dropdown">
                             <a href="#">Shampoo</a>
-                            <div class="sub-dropdown-content">
-                                <a href="#">Anti-Dandruff</a>
-                                <a href="#">Moisturizing</a>
-                                <a href="#">Volumizing</a>
-                                <a href="#">Dove</a>
-                                <a href="#">Sunsilk</a>
-                                <a href="#">Clinic plus</a>
-                                <!-- Add other shampoo items here -->
-                            </div>
                         </div>
                     </div>
                 </li>
-                <li><button class="fa">&#xf07a; Add to cart</button></li>
+                <li><button onclick='document.location="cart.html"'class="fa">&#xf07a; Add to cart</button></li>
             </ul>
         </nav>
     </header>
+    <main id="productGallery"></main>
     
-      <footer class="footer">
+    <footer class="footer">
         <div class="waves">
           <div class="wave" id="wave1"></div>
           <div class="wave" id="wave2"></div>
@@ -94,16 +55,16 @@
           <div class="wave" id="wave4"></div>
         </div>
         <ul class="social-icon">
-          <li class="social-icon_item"><a class="social-icon_link" href="#">
+          <li class="social-icon_item"><a class="social-icon_link" href="https://www.facebook.com/">
               <ion-icon name="logo-facebook"></ion-icon>
             </a></li>
-          <li class="social-icon_item"><a class="social-icon_link" href="#">
+          <li class="social-icon_item"><a class="social-icon_link" href="https://www.twitter.com/">
               <ion-icon name="logo-twitter"></ion-icon>
             </a></li>
-          <li class="social-icon_item"><a class="social-icon_link" href="#">
+          <li class="social-icon_item"><a class="social-icon_link" href="https://www.linkedin.com/">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a></li>
-          <li class="social-icon_item"><a class="social-icon_link" href="#">
+          <li class="social-icon_item"><a class="social-icon_link" href="https://www.instagram.com/">
               <ion-icon name="logo-instagram"></ion-icon>
             </a></li>
         </ul>
@@ -117,8 +78,6 @@
         </ul>
         <p>&copy;2024 Grocery website | All Rights Reserved</p>
       </footer>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+     
 </body>
 </html>
