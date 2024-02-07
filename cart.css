@@ -78,7 +78,7 @@ main {
 .grand-total {
     margin-top: 30px;
     font-size: 1.5em;
-    text-align: right;
+    text-align: right; 
     color: #333;
     border-top: 2px solid #333;
     padding-top: 10px;
