@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="register.css">
-    <link rel="icon" type="image/x-icon" href="./images/webfavicon.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+    <script src="{{ url_for('static', filename='register.js') }}"></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='webimg.png') }}">
 </head>
 <body>
     <div class="register-container">
         <h2>Register</h2>
-        <form>
+        <form id="register-form"  action="/register" method="post">
             <div class="form-item">
                 <label for="username"><b>Username</b></label>
                 <input type="text" id="username" name="username" required>
@@ -31,7 +33,8 @@
                 <input type="submit" value="Register">
             </div>
         </form>
-        <p>Already have an account ! <a href="login.html">login here.</a></p>
+        <p>Already have an account ! <a href="login">login here.</a></p>
     </div>
+    <script src="C:/Users/sweth/OneDrive/Documents/Documents/intern swetha/register.js"></script>
 </body>
 </html>

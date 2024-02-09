@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="icon" type="image/x-icon" href="./images/webimg.png">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='webimg.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="home.js"></script>
-    <script src="cart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <script src="{{ url_for('static', filename='home.js') }}"></script>
+    <script src="{{ url_for('static', filename='cart.js') }}"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#"><img src="./images/webimg.png" alt="website logo"></a></li>
                 <li> <input class="fa" type="text" placeholder=" &#xf002;  Search for products"></li>
-                <li><button onclick='document.location="login.html"'>Login/Register</button></li>
+                <li><button onclick='document.location="/login"'>Login/Register</button></li>
                 <li class="dropdown">
                     <button class="fa">Product Categories</button>
                     <div class="dropdown-content">
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                 </li>
-                <li><button onclick='document.location="cart.html"'class="fa">&#xf07a; Add to cart</button></li>
+                <li><button onclick='document.location="/cart"'class="fa">&#xf07a; Add to cart</button></li>
             </ul>
         </nav>
     </header>

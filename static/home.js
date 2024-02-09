@@ -1,14 +1,14 @@
 const products = [
-    { id: 1, name: 'SUNFLOWER OIL 1kg', category:'Oil',price: 180, image: './images/1.png' },
-    { id: 2, name: 'PEDIGREE 1kg', category:'products',price: 150, image: './images/2.png' },
-    { id: 3, name: 'VIM LIQUID 1liter', category:'products',price: 110, image: './images/3.png' },
-    { id: 4, name: 'ODONIL 1', price: 30,category:'products', image: './images/4.png' },
-    { id: 5, name: 'COCACOLA 1liter',category:'Snacks', price: 25, image: './images/5.png' },
-    { id: 6, name: 'Doughnut 1kg',category:'Snacks', price: 80, image: './images/6.png' },
-    { id: 6, name: 'RUSK 1', category:'Snacks',price: 55, image: './images/7.png' },
-    { id: 6, name: 'APPLE 1kg',category:'Fruits', price: 60, image: './images/8.png' },
-    { id: 6, name: 'BRINJAL 1kg',category:'Vegetables', price: 40, image: './images/9.png' },
-    { id: 6, name: 'ONION 1kg',category:'Vegetables', price: 75, image: './images/10.png' },
+    { id: 1, name: 'SUNFLOWER OIL 1kg', category:'Oil',price: 180, image: '/static/images/1.png' },
+    { id: 2, name: 'PEDIGREE 1kg', category:'products',price: 150, image: '/static/images/2.png'},
+    { id: 3, name: 'VIM LIQUID 1liter', category:'products',price: 110, image: '/static/images/3.png' },
+    { id: 4, name: 'ODONIL 1', price: 30,category:'products', image: '/static/images/4.png' },
+    { id: 5, name: 'COCACOLA 1liter',category:'Snacks', price: 25, image: '/static/images/5.png' },
+    { id: 6, name: 'Doughnut 1kg',category:'Snacks', price: 80, image: '/static/images/6.png' },
+    { id: 6, name: 'RUSK 1', category:'Snacks',price: 55, image: '/static/images/7.png' },
+    { id: 6, name: 'APPLE 1kg',category:'Fruits', price: 60, image: '/static/images/8.png' },
+    { id: 6, name: 'BRINJAL 1kg',category:'Vegetables', price: 40, image: '/static/images/9.png' },
+    { id: 6, name: 'ONION 1kg',category:'Vegetables', price: 75, image: '/static/images/10.png' },
     ];
     document.addEventListener('DOMContentLoaded', function () {
         const productGallery = document.getElementById('productGallery');

@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cart.css') }}">
+    <script src="{{ url_for('static', filename='cart.js') }}"></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='webimg.png') }}">
+
+   
     <title>Shopping Cart</title>
 </head>
 <body>
@@ -12,6 +16,6 @@
     </header>
     <main id="cartItems"></main>
     <div id="grandTotal"></div>
-    <script src="cart.js"></script>
+   
 </body>
 </html>

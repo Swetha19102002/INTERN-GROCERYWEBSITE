@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='webimg.png') }}">
+
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="login-form" action='/login' method='POST'>
+            <div class="input-container">
+                <label for="username"><b>Username</b></label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="phoneOrEmail"><b>Phone Number or Email</b></label>
+                <input type="text" id="phoneOrEmail" name="phoneOrEmail" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account?<a href="/register"> Register here.</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="C:/Users/sweth/OneDrive/Documents/Documents/intern swetha/login.js"></script> <!-- Include your new JavaScript file -->
+</body>
+</html>
