@@ -1,8 +1,7 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
-from bson import ObjectId
 
-app = Flask(__name__,static_url_path= '/static')
+app = Flask(__name__, static_url_path='/static')
 
 # Connect to MongoDB
 client = MongoClient('localhost', 27017)
@@ -42,7 +41,7 @@ def register():
     }
     collection.insert_one(data)
 
-    return jsonify({'message': 'Registration successful'})
+    return redirect(url_for('login_form'))
 
 # Route to render login form
 @app.route('/login')
@@ -58,7 +57,7 @@ def login():
 
     # Check if username and phone_or_email are not None
     if username is None or phone_or_email is None:
-        return jsonify({'message': 'Invalid input'})
+        return render_template('login.html', message='Invalid input')
 
     # Search for user in MongoDB
     user = collection.find_one({
@@ -72,11 +71,10 @@ def login():
     })
 
     if user:
-        # Convert ObjectId to string for serialization
-        user['_id'] = str(user['_id'])
-        return jsonify({'message': 'Login successful', 'user': user})
+        # Redirect to the home page
+        return redirect(url_for('home_page'))
     else:
-        return jsonify({'message': 'Invalid username, phone number, or email'})
+        return render_template('login.html', message='Invalid username, phone number, or email')
 
 if __name__ == '__main__':
     app.run(debug=True)

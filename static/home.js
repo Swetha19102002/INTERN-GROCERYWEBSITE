@@ -17,7 +17,7 @@ const products = [
     { id: 15, name: 'SPINACH',category:'Vegetables', price: 20, image: '/static/images/16.png' },
     { id: 17, name: 'VIMBAR 1',category:'products', price: 35, image: '/static/images/17.png' },
     { id: 18, name: 'DOMEX 1',category:'products', price: 45, image: '/static/images/18.png' },
-    { id: 19, name: 'SWEET LEMON 1kg',category:'Fruits', price: 45, image: '/static/images/19.png' },
+    { id: 19, name: 'MOSAMBI 1kg',category:'Fruits', price: 45, image: '/static/images/19.png' },
     { id: 20, name: 'CUPCAKES 1kg',category:'Snacks', price: 80, image: '/static/images/20.png' },
     { id: 21, name: 'MIRANDA 1L',category:'Snacks', price: 30, image: '/static/images/21.png' },
     { id: 22, name: 'PEDIGREE 1kg', category:'products',price: 150, image: '/static/images/22.png'},
