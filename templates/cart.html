@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='cart.css') }}">
     <script src="{{ url_for('static', filename='cart.js') }}"></script>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='webimg.png') }}">
-
+    
    
     <title>Shopping Cart</title>
 </head>
 <body>
     <header>
+        <a id="img" href="/"><img src="static/images/homefavicon.png" alt="website logo"></a>
         <h1>Shopping Cart</h1>
+        
     </header>
     <main id="cartItems"></main>
     <div id="grandTotal"></div>

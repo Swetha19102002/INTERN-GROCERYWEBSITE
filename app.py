@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
 from bson import ObjectId
 
-app = Flask(__name__)
+app = Flask(__name__,static_url_path= '/static')
 
 # Connect to MongoDB
 client = MongoClient('localhost', 27017)

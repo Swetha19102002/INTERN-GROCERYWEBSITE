@@ -9,12 +9,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: aliceblue;
+ 
 }
 header {
-  background-color: white;
+  background-color: #f5f5f5;
   position: relative;
   top: 0;
-  height: 150px;
+  height: 125px;
 }
 header div {
   flex: 1;
@@ -36,7 +38,7 @@ nav ul li a img {
   height: auto;
 }
 nav ul li button {
-  background-color: #3586ff;
+  background-color: #3685fa;
   color: white;
   font-size: 15px;
   border: none;
@@ -83,7 +85,7 @@ input::placeholder {
   display:inline-block;
 }
 .dropdown button {
-  background-color: #3586ff;
+  background-color: #3685fa;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -115,12 +117,14 @@ main {
   margin-bottom: 500px;
 }
 .product-card {
-  border: 1px solid #ccc;
+  border: 2px solid black;
   padding: 10px;
   margin: 10px;
   text-align: center;
   width: 250px; 
   box-sizing: border-box;
+  border-radius: 20px 0;
+  background-color: #fff;
 }
 .product-card img {
   max-width: 100%;
@@ -142,7 +146,7 @@ main {
 }
 .cart-btn{
   cursor: pointer;
-  background-color: #3586ff;
+  background-color: #3685fa;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -150,7 +154,7 @@ main {
   border-radius: 5px;
 }
 .cart-btn:hover{
-  background-color:#3586ff;
+  background-color:#3685ff;
 }
 .popup {
   position: fixed;
