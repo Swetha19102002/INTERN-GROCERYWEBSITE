@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     updateGrandTotal(cartItems);
 });
+
 function createCartItemCard(cartItem) {
     const cartItemCard = document.createElement('div');
     cartItemCard.classList.add('cart-item-card');
@@ -44,6 +45,7 @@ function createCartItemCard(cartItem) {
     cartItemCard.appendChild(cartItemDetails);
     return cartItemCard;
 }
+
 function createQuantityControls(cartItem) {
     const quantityControls = document.createElement('div');
     quantityControls.classList.add('quantity-controls');
