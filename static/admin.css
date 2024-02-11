@@ -1,0 +1,66 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Style the h1 heading */
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the table header */
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the table header cells */
+th {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Style the table body */
+tbody {
+    background-color: #f9f9f9;
+}
+
+/* Style alternating table rows */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style table cells */
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style table cells in the last column */
+td:last-child {
+    border-right: 0;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+    background-color: #ddd;
+}

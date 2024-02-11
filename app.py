@@ -1,6 +1,8 @@
+# Import necessary modules
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 
+# Initialize Flask application
 app = Flask(__name__, static_url_path='/static')
 
 # Connect to MongoDB
@@ -8,15 +10,15 @@ client = MongoClient('localhost', 27017)
 db = client['registration']
 collection = db['users']
 
-#home page
+# Route to render home page
 @app.route('/')
 def home_page():
     return render_template('home.html')
 
-#cart 
+# Route to render cart page
 @app.route('/cart')
 def cart_page():
-    return render_template('cart.html' )
+    return render_template('cart.html')
 
 # Route to render registration form
 @app.route('/register')
@@ -53,7 +55,7 @@ def login_form():
 def login():
     # Extract data from the login form
     username = request.form.get('username')
-    phone_or_email = request.form.get('phoneOrEmail')  # Adjusted name here
+    phone_or_email = request.form.get('phoneOrEmail')
 
     # Check if username and phone_or_email are not None
     if username is None or phone_or_email is None:
@@ -62,9 +64,9 @@ def login():
     # Search for user in MongoDB
     user = collection.find_one({
         '$and': [
-            {'username': username.strip() if username else ''},  # Ensure exact match and remove leading/trailing spaces
+            {'username': username.strip() if username else ''},
             {'$or': [
-                {'email': phone_or_email.strip() if phone_or_email else ''},  # Ensure exact match and remove leading/trailing spaces
+                {'email': phone_or_email.strip() if phone_or_email else ''},
                 {'phone': phone_or_email.strip() if phone_or_email else ''}
             ]}
         ]
@@ -75,6 +77,13 @@ def login():
         return redirect(url_for('home_page'))
     else:
         return render_template('login.html', message='Invalid username, phone number, or email')
+
+# Route to render admin page with user details
+@app.route('/admin')
+def admin_page():
+    # Retrieve all user details from MongoDB
+    users = collection.find()
+    return render_template('admin.html', users=users)
 
 if __name__ == '__main__':
     app.run(debug=True)
